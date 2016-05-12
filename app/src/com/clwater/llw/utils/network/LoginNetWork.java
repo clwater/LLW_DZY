@@ -1,4 +1,4 @@
-package utils;
+package com.clwater.llw.utils.network;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,11 +15,13 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
+import com.clwater.llw.model.User;
+
 import android.content.Context;
 import android.os.StrictMode;
 
-public class TestNetWork {
-	 public  static String getRestaurant(Context context){
+public class LoginNetWork {
+	 public  static String getRestaurant(Context context , User user){
 	        String result = null;
 
 
@@ -28,7 +30,8 @@ public class TestNetWork {
 	                .penaltyLog().build());
 
 	        HttpClient httpClient = new DefaultHttpClient();
-	        HttpGet httpget = new HttpGet("http://localhost/llw/login?id=2016001&pw=123456");
+	        String url = "http://182.254.210.18/llw/login.php?id=" + user.getId() + "&pw=" + user.getPw();
+	        HttpGet httpget = new HttpGet(url);
 	        List<NameValuePair> params  =new ArrayList<NameValuePair>();
 
 	        try {
@@ -36,8 +39,11 @@ public class TestNetWork {
 	            HttpResponse httpResp = httpClient.execute(httpget);
 	            if (httpResp.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
 	                result = EntityUtils.toString(httpResp.getEntity(), "UTF-8");
+	                return result;
+	            }else{
+	            	return "0";
 	            }
 	        } catch (IOException e) {}
-	        return result;
+	        return "0";
 	    }
 }
