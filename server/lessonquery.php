@@ -11,7 +11,7 @@ if ($con) {
  mysql_query("set character_set_results=utf8");
 
 
-  $result = mysql_query("SELECT * FROM student ");
+  $result = mysql_query("SELECT * FROM lesson ");
   $return = "{\"statu\":\"ok\",\"student\": [";
   $num = mysql_num_rows($result);
  if ($num==0) {
@@ -25,8 +25,22 @@ if ($con) {
      $return = $return."".$row['student_name'];
      $return = $return.""."\",\"id\":\"";
      $return = $return."".$row['student_id'];
-     $return = $return.""."\",\"class\":\"";
-     $return = $return."".$row['student_class'];
+
+     $return = $return.""."\",\"attendance\":\"";
+     $return = $return."".$row['attendance'];
+
+     $return = $return.""."\",\"lessonstatu\":\"";
+     $return = $return."".$row['lessonstatu'];
+
+     $return = $return.""."\",\"homework\":\"";
+     $return = $return."".$row['homework'];
+
+     $return = $return.""."\",\"lessontest\":\"";
+     $return = $return."".$row['lessontest'];
+
+     $return = $return.""."\",\"score\":\"";
+     $return = $return."".$row['score'];
+     
      $return = $return.""."\"}";
      if ($index != $num) {
       $return = $return."".",";
