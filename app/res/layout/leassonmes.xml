@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+  
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:id="@+id/les_adm_name"
+                    android:textSize="20dp"
+                    android:text="name"/>
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textSize="20dp"
+                    android:id="@+id/les_adm_id"
+                    android:text="id"/>
+                
+            </LinearLayout>
+            
+            
+            
+           <TextView android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000"/>
+           
+     
+           
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="score"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:paddingRight="10dp"
+                android:id="@+id/les_adm_score"/>
+            
+            <TextView android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000"/>
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="考勤\n情况"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                
+                <TextView 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"/>
+                
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="4" 
+                   android:orientation="vertical">
+                   
+                    <LinearLayout 
+		                android:layout_height="wrap_content"
+		                android:layout_width="match_parent"
+		                android:orientation="horizontal">
+		                
+                        
+                        <LinearLayout 
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="1">
+			                
+                            <TextView 
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="事假"/>
+                            
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0"
+                                android:id="@+id/les_adm_sj"/>
+			                
+			            </LinearLayout>
+			            
+                        <LinearLayout 
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="1">
+			                
+                             <TextView 
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="病假"/>
+                            
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0"
+                                android:id="@+id/les_adm_bj"/>
+                            
+                            
+			            </LinearLayout>
+                        
+                        
+		            </LinearLayout>
+		            
+                    <LinearLayout 
+		                android:layout_height="wrap_content"
+		                android:layout_width="match_parent">
+                        
+                        <LinearLayout 
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="1">
+                            
+                             <TextView 
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="迟到早退"/>
+                            
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0"
+                                android:id="@+id/les_adm_cdzt"/>
+			                
+			            </LinearLayout>
+			            
+                        <LinearLayout 
+			                android:layout_height="wrap_content"
+			                android:layout_width="0dp"
+			                android:layout_weight="1">
+			                
+                             <TextView 
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="旷课"/>
+                            
+                            <EditText
+                                android:inputType="number"
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="0"
+                                android:id="@+id/les_adm_kk"/>
+                            
+			            </LinearLayout>
+		                
+		            </LinearLayout>
+                    
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+            <TextView android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000"/>
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="课堂\n表现"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                
+                 <TextView 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"/>
+                
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="4" 
+                   android:orientation="vertical">
+                    
+                
+                    <EditText 
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_leassonstatu"/>
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000"/>
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                
+                 <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="平时成绩"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                
+                 <TextView 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"/>
+                
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="4" 
+                   android:orientation="horizontal">
+                    
+                    <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="1、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                    <EditText 
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_leassontest1"/>
+                    
+                     <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="2、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                    <EditText 
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_leassontest2"/>
+                    
+                     <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="3、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                   <EditText 
+                       android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_leassontest3"/>
+                  
+                 </LinearLayout>
+                
+            </LinearLayout>
+            <TextView android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#000"/>
+            
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                
+                 <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="作业\n成绩"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+                
+                 <TextView 
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#ccc"/>
+                
+                <LinearLayout 
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="4" 
+                   android:orientation="horizontal">
+                 
+                    
+                     <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="1、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                    <EditText 
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_homework1"/>
+                    
+                     <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="2、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                    <EditText 
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_homework2"/>
+                    
+                     <TextView 
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:text="3、"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"/>
+                 
+                   <EditText 
+                       android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:id="@+id/les_adm_homework3"/>
+                    
+                 </LinearLayout>
+                
+            </LinearLayout>
+         
+            
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:id="@+id/les_adm_ok"/>
+
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:id="@+id/les_adm_up"/>
+</LinearLayout>

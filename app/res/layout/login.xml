@@ -61,6 +61,7 @@
                 android:textColorHint="#b3b3b3"
                 android:gravity="center"
                 android:hint="用户名"
+                android:text="2016001"
                 android:id="@+id/userid" />
 
             <TextView
@@ -81,6 +82,7 @@
                 android:gravity="center"
                 android:background="@drawable/rounded"
                 android:hint="密码"
+                android:text="123456"
                 android:textColorHint="#b3b3b3"
                 android:inputType="textPassword"
                 android:id="@+id/passwd" />

@@ -1,7 +1,7 @@
 package com.clwater.llw.model;
 
 public class User {
-	String id , pw ,statu;
+	static String id , pw ,statu;
 
 	public String getId() {
 		return id;

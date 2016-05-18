@@ -25,6 +25,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.clwater.llw.ui.TeacherActivity"></activity>
+        <activity android:name="com.clwater.llw.ui.Teacher_student_Activity"></activity>
+        <activity android:name="com.clwater.llw.ui.StudentAdminMessageActivity"></activity>
+        <activity android:name="com.clwater.llw.ui.SuiShenJiActivity"></activity>
+        <activity android:name="com.clwater.llw.ui.SSJMessageActivity"></activity>
+        <activity android:name="com.clwater.llw.ui.Teacher_lesson_Activity"></activity>
+        <activity android:name="com.clwater.llw.ui.LeassonMessageActivity"></activity>
     </application>
 
 </manifest>

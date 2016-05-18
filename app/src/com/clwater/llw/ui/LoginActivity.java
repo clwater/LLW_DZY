@@ -23,7 +23,7 @@ public class LoginActivity extends Activity {
 	public Activity activity;
 	private Button login_button;
 	private EditText id , pw ;
-	private User user = new User();
+	public static User user = new User();
 	public ProgressDialog pr;
 	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +39,16 @@ public class LoginActivity extends Activity {
 		login_button = (Button) findViewById(R.id.log_button);
 		login_button.setOnClickListener(new OnClickListener() {			
 			public void onClick(View v) {
-				pr = ProgressDialog.show(LoginActivity.this, null, "登陆中......");
+				
+				
+				
+//				pr = ProgressDialog.show(LoginActivity.this, null, "登陆中......");
 				user.setId(id.getText().toString());
 				user.setPw(pw.getText().toString());
-				LoginTask task=new LoginTask();
-		        task.execute();
+				
+				testmeiwang();
+//				LoginTask task=new LoginTask();
+//		        task.execute();
 			}
 		});
 	}
@@ -63,15 +68,42 @@ public class LoginActivity extends Activity {
 
     private void pdstatu(String re) {
     	pr.dismiss();
+    	
+    	
+    	
+    	
+    	
+    	
     	if(re.equals("0"))
     		Toast.makeText(LoginActivity.this, "账号或密码错误，请重新登录", Toast.LENGTH_SHORT).show();
     	else {
-    		Intent next = new Intent(this , MainActivity.class);
-    		next.putExtra("userid", user.getId());
-    		next.putExtra("userpw", user.getPw());
-    		next.putExtra("userstatu", user.getStatu());
-    		startActivity(next);
+    		
+    		if(re.equals("1")){
+    			Intent next = new Intent(this , TeacherActivity.class);
+        		next.putExtra("userid", user.getId());
+        		next.putExtra("userpw", user.getPw());
+        		next.putExtra("userstatu", user.getStatu());
+        		startActivity(next);
+        		
+        		this.finish();
+    		}else{
+//    			Intent next = new Intent(this , MainActivity.class);
+//        		next.putExtra("userid", user.getId());
+//        		next.putExtra("userpw", user.getPw());
+//        		next.putExtra("userstatu", user.getStatu());
+//        		startActivity(next);
+    		}
+    		
     	}
+	}
+	private void testmeiwang() {
+		Intent next = new Intent(this , TeacherActivity.class);
+		next.putExtra("userid", user.getId());
+		next.putExtra("userpw", user.getPw());
+		next.putExtra("userstatu", user.getStatu());
+		startActivity(next);
+		
+		this.finish();		
 	}
 
 }
