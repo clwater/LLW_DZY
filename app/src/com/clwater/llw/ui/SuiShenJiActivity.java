@@ -60,6 +60,7 @@ public class SuiShenJiActivity extends Activity implements OnClickListener, OnIt
 		ssldh = new SSlDatabaseHelper(this);
 		db = null;
 		db = ssldh.getReadableDatabase();
+		ssldh.onCreate(db);
 		
 				
 	

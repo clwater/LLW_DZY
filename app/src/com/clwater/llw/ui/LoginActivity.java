@@ -42,13 +42,13 @@ public class LoginActivity extends Activity {
 				
 				
 				
-//				pr = ProgressDialog.show(LoginActivity.this, null, "登陆中......");
+				pr = ProgressDialog.show(LoginActivity.this, null, "登陆中......");
 				user.setId(id.getText().toString());
 				user.setPw(pw.getText().toString());
 				
-				testmeiwang();
-//				LoginTask task=new LoginTask();
-//		        task.execute();
+				//testmeiwang();
+				LoginTask task=new LoginTask();
+		        task.execute();
 			}
 		});
 	}
@@ -87,17 +87,17 @@ public class LoginActivity extends Activity {
         		
         		this.finish();
     		}else{
-//    			Intent next = new Intent(this , MainActivity.class);
-//        		next.putExtra("userid", user.getId());
-//        		next.putExtra("userpw", user.getPw());
-//        		next.putExtra("userstatu", user.getStatu());
-//        		startActivity(next);
+    			Intent next = new Intent(this , Student.class);
+        		//next.putExtra("userid", user.getId());
+        		//next.putExtra("userpw", user.getPw());
+        		//next.putExtra("userstatu", user.getStatu());
+        		startActivity(next);
     		}
     		
     	}
 	}
 	private void testmeiwang() {
-		Intent next = new Intent(this , TeacherActivity.class);
+		Intent next = new Intent(this , Student.class);
 		next.putExtra("userid", user.getId());
 		next.putExtra("userpw", user.getPw());
 		next.putExtra("userstatu", user.getStatu());
