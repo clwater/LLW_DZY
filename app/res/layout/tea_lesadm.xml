@@ -6,11 +6,20 @@
     
     
 
-
+ 	<TextView 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5"
+        android:text="学生课堂信息管理"
+       	android:padding="4dp"
+       	android:textSize="20dp"
+       	android:textColor="#fff"
+       	android:gravity="left|center_vertical"/>
     
     
       <ListView
         android:id="@+id/tes_les_list"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10" >

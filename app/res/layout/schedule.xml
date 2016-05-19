@@ -4,6 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    
+     <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3F51B5"
+        android:text="学生课表查询"
+       	android:padding="4dp"
+       	android:textSize="20dp"
+       	android:textColor="#fff"
+       	android:gravity="left|center_vertical"/>
     <WebView 
         android:layout_width="match_parent"
         android:layout_height="match_parent"

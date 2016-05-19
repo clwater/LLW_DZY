@@ -65,9 +65,12 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 	}
 	private void create() {
 
-		listView = new ListView(activity);
-        listView.setAdapter(new ArrayAdapter<String>(activity, android.R.layout.simple_expandable_list_item_1,getData()));
-        setContentView(listView);
+		//listView = new ListView(activity);
+		listView = (ListView) findViewById(R.id.tes_les_list);
+		listView.setAdapter(new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, getData()));
+        //listView.setAdapter(new ArrayAdapter<String>(activity, android.R.layout.simple_expandable_list_item_1,getData()));
+        //setContentView(listView);
         
         
         listView.setOnItemClickListener(this);
