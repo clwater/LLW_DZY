@@ -33,6 +33,7 @@
         <activity android:name="com.clwater.llw.ui.Teacher_lesson_Activity"></activity>
         <activity android:name="com.clwater.llw.ui.LeassonMessageActivity"></activity>
         <activity android:name="com.clwater.llw.ui.Student"></activity>
+        <activity android:name="com.clwater.llw.ui.Schedule"></activity>
     </application>
 
 </manifest>

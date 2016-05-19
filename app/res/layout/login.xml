@@ -61,7 +61,7 @@
                 android:textColorHint="#b3b3b3"
                 android:gravity="center"
                 android:hint="用户名"
-                android:text="2016001"
+                android:text="201312026"
                 android:id="@+id/userid" />
 
             <TextView

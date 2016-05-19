@@ -38,7 +38,7 @@ public class Student extends Activity {
 		stu_sch = (Button) findViewById(R.id.stu_sch);
 		stu_sch.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				
+				startActivity(new Intent(activity , Schedule.class));
 			}
 		});
 		
