@@ -92,6 +92,7 @@ public class LoginActivity extends Activity {
         		//next.putExtra("userpw", user.getPw());
         		//next.putExtra("userstatu", user.getStatu());
         		startActivity(next);
+        		this.finish();
     		}
     		
     	}

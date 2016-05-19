@@ -36,6 +36,7 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 	private String chhooseid;
 	List<Map<String, Object>> list;
 	private Vector<Lesson> alllesson = new Vector<Lesson>();
+	//private Lesson lesson;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,6 +55,7 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 				} catch (JSONException e) {			}
 			//Toast.makeText(activity, "xing", Toast.LENGTH_SHORT).show();
 		}
+		
 		
 
 		
