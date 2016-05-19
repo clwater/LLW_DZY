@@ -20,6 +20,7 @@ if ($con) {
 
  if ($result > 0) {
   mysql_query("INSERT INTO `lesson`(`student_id`, `student_name`) VALUES ($id, $name)");
+  mysql_query("INSERT INTO `login`(`loginid`, `loginstatu`) VALUES ($id, '2')");
   echo "{\"statu\":\"success\"}";
  }else {
   echo "{\"statu\":\"error\"}";
