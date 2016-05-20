@@ -53,7 +53,6 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 			try {
 				alllesson = LeassonAnalysis.getstudent(result);
 				} catch (JSONException e) {			}
-			//Toast.makeText(activity, "xing", Toast.LENGTH_SHORT).show();
 		}
 		
 		
@@ -65,12 +64,9 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 	}
 	private void create() {
 
-		//listView = new ListView(activity);
 		listView = (ListView) findViewById(R.id.tes_les_list);
 		listView.setAdapter(new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, getData()));
-        //listView.setAdapter(new ArrayAdapter<String>(activity, android.R.layout.simple_expandable_list_item_1,getData()));
-        //setContentView(listView);
         
         
         listView.setOnItemClickListener(this);
@@ -93,19 +89,12 @@ public class Teacher_lesson_Activity extends Activity implements OnItemClickList
 	public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		Intent next = new Intent(activity , LeassonMessageActivity.class);
 		next.putExtra("id", alllesson.get(position).getStudent_id());
-		Log.d("lle", alllesson.get(position).getStudent_id());
 		next.putExtra("name", alllesson.get(position).getStudent_name());
-		Log.d("lle", alllesson.get(position).getStudent_name());
 		next.putExtra("attendance", alllesson.get(position).getAttendance());
-		Log.d("lle", alllesson.get(position).getAttendance());
 		next.putExtra("homework", alllesson.get(position).getHomework());
-		Log.d("lle", alllesson.get(position).getHomework());
 		next.putExtra("lessonstatu", alllesson.get(position).getLessonstatu());
-		Log.d("lle", alllesson.get(position).getLessonstatu());
 		next.putExtra("lessontest", alllesson.get(position).getLessontest());
-		Log.d("lle", alllesson.get(position).getLessontest());
 		next.putExtra("score", alllesson.get(position).getScore());
-		Log.d("lle", alllesson.get(position).getScore());
 		activity.startActivity(next);
 		
 		activity.finish();
