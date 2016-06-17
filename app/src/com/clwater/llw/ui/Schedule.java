@@ -41,7 +41,8 @@ public class Schedule  extends Activity{
 		webView = (WebView) findViewById(R.id.web);
 		WebSettings settings = webView.getSettings();
 		settings.setJavaScriptEnabled(true);
-		webView.loadUrl("http://cityuit.wuxiwei.cn/index.php/Home/Students/appWeek/auth/201312026/week/" + now_week);
+		String url = "http://cityuit.wuxiwei.cn/index.php/Home/Students/appWeek/auth/"+ LoginActivity.user.getId()+"/week/";
+		webView.loadUrl(url + now_week);
 		webView.setWebViewClient(new WebViewClient(){
 		      @Override
 		      public boolean shouldOverrideUrlLoading(WebView view, String url) {
