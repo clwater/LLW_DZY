@@ -42,7 +42,7 @@ public class LoginActivity extends Activity {
 				
 				
 				
-				pr = ProgressDialog.show(LoginActivity.this, null, "登陆中......");
+				pr = ProgressDialog.show(LoginActivity.this, null, "登录中......");
 				user.setId(id.getText().toString());
 				user.setPw(pw.getText().toString());
 				
